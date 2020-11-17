@@ -7,6 +7,7 @@ namespace Planner
         static void Main(string[] args)
         {
             // ~~~~~~~~~~~~ Buildings ~~~~~~~~~~~~~
+
             Building ashwoodModel = new Building("512 8th Avenue");
             ashwoodModel.Width = 200;
             ashwoodModel.Depth = 300;
@@ -42,10 +43,13 @@ namespace Planner
             // pineCrestModel.Buildings();
             // bloomsdaleModel.Buildings();
 
-            //~~~~~~~~~~~~ Cities ~~~~~~~~~~~~~
+            // ~~~~~~~~~~~~ Cities ~~~~~~~~~~~~~
+
             City megalopolis = new City("Megapolis");
             megalopolis.Mayor("Dolly Parton");
 
+            // List<string> buildings = new List<string>()
+            // {$"{bloomsdaleModel}, {pineCrestModel}, {ashwoodModel} "};
             // foreach (Building building in megalopolis.Buildings)
             // {
             //     Console.WriteLine($"calling buildings: {megalopolis.Buildings}.");
