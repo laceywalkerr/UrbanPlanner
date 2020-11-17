@@ -26,39 +26,49 @@ namespace Planner
             _address = address;
         }
 
-        public string GetAddress()
-        {
-            return _address;
-        }
+        // public string GetAddress()
+        // {
+        //     return _address;
+        // }
 
         public void Construct()
         {
             _dateConstructed = DateTime.Now;
         }
 
-        public DateTime GetDate()
-        {
-            return _dateConstructed;
-        }
+        // public DateTime GetDate()
+        // {
+        //     return _dateConstructed;
+        // }
 
         public void Purchase(string buyer)
         {
             _owner = buyer;
         }
 
-        public string GetOwner()
-        {
-            return _owner;
-        }
+        // public string GetOwner()
+        // {
+        //     return _owner;
+        // }
 
         public void Design(string designer)
         {
             _designer = designer;
         }
 
-        public string GetDesigners()
+        // public string GetDesigners()
+        // {
+        //     return _designer;
+        // }
+
+        public void Buildings()
         {
-            return _designer;
+            Console.WriteLine($"Address: {_address}");
+            Console.WriteLine("---------------");
+            Console.WriteLine($"Designed by {_designer}");
+            Console.WriteLine($"Constructed on {_dateConstructed}");
+            Console.WriteLine($"Owned by {_owner}");
+            Console.WriteLine($"{Volume} cubic meters of space");
         }
 
     }
