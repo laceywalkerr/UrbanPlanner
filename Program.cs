@@ -31,11 +31,11 @@ namespace Planner
             BloomsdaleModel.Design("Isabelle");
 
             Console.WriteLine($"Address: {AshwoodModel.GetAddress()}");
-            Console.Write("---------------");
+            Console.WriteLine("---------------");
             Console.WriteLine($"Designed by {AshwoodModel.GetDesigners()}");
             Console.WriteLine($"Constructed on {AshwoodModel.GetDate()}");
             Console.WriteLine($"Owned by {AshwoodModel.GetOwner()}");
-            // Console.WriteLine($"{AshwoodModel.GetVolume()} cubic meters of space");
+            Console.WriteLine($"{AshwoodModel.Volume} cubic meters of space");
 
         }
     }
