@@ -12,12 +12,12 @@ namespace Planner
         public int Stories { get; set; }
         public double Width { get; set; }
 
-        public double Depth { get; set; }
+        public double Height { get; set; }
         public double Volume
         {
             get
             {
-                return Width * Depth * (3 * Stories);
+                return Width * Height * (3 * Stories);
             }
         }
 
@@ -39,6 +39,11 @@ namespace Planner
         public void Design(string designer)
         {
             _designer = designer;
+        }
+
+        public string GetDesigners()
+        {
+            return _designer;
         }
     }
 
