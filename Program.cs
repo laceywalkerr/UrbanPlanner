@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Planner
+namespace UrbanPlanner
 {
     public class MyCity
     {
