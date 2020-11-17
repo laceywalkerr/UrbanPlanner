@@ -38,20 +38,24 @@ namespace Planner
             // Console.WriteLine($"Owned by {ashwoodModel.GetOwner()}");
             // Console.WriteLine($"{ashwoodModel.Volume} cubic meters of space");
 
-            ashwoodModel.Buildings();
-            pineCrestModel.Buildings();
-            bloomsdaleModel.Buildings();
+            // ashwoodModel.Buildings();
+            // pineCrestModel.Buildings();
+            // bloomsdaleModel.Buildings();
 
             //~~~~~~~~~~~~ Cities ~~~~~~~~~~~~~
             City megalopolis = new City("Megapolis");
             megalopolis.Mayor("Dolly Parton");
 
-            // foreach(Building building in megalopolis.Buildings)
+            // foreach (Building building in megalopolis.Buildings)
             // {
-            //     Console.WriteLine("...");
+            //     Console.WriteLine($"calling buildings: {megalopolis.Buildings}.");
             // }
 
+            City gotham = new City("Gotham");
+            gotham.Mayor("Aubrey James");
+
             megalopolis.Cities();
+            gotham.Cities();
 
         }
     }
