@@ -1,5 +1,8 @@
 ## Practice: Urban Planner
 
+Feel free to referance back to 
+https://github.com/laceywalkerr/ClassBasics
+
 ### Setup
 
 ```sh
