@@ -12,12 +12,12 @@ namespace Planner
         public int Stories { get; set; }
         public double Width { get; set; }
 
-        public double Height { get; set; }
+        public double Depth { get; set; }
         public double Volume
         {
             get
             {
-                return Width * Height * (3 * Stories);
+                return Width * Depth * (3 * Stories);
             }
         }
 
@@ -26,14 +26,29 @@ namespace Planner
             _address = address;
         }
 
+        public string GetAddress()
+        {
+            return _address;
+        }
+
         public void Construct()
         {
             _dateConstructed = DateTime.Now;
         }
 
+        public DateTime GetDate()
+        {
+            return _dateConstructed;
+        }
+
         public void Purchase(string buyer)
         {
             _owner = buyer;
+        }
+
+        public string GetOwner()
+        {
+            return _owner;
         }
 
         public void Design(string designer)
@@ -45,6 +60,7 @@ namespace Planner
         {
             return _designer;
         }
+
     }
 
 }
