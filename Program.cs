@@ -2,11 +2,8 @@
 
 namespace Planner
 {
-    class Program
+    public class MyCity
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+
     }
 }
